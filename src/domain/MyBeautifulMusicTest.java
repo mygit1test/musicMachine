@@ -2,7 +2,7 @@ package domain;
 
 import javax.sound.midi.*;
 
-public class MusicTest1 {
+public class MyBeautifulMusicTest {
 
 	public void play() throws MidiUnavailableException {
 	 Sequencer sequencer = MidiSystem.getSequencer(); 
@@ -10,7 +10,7 @@ public class MusicTest1 {
 	 }
 
 	public static void main(String[] args) {
-		MusicTest1 mt = new MusicTest1();
+		MyBeautifulMusicTest mt = new MyBeautifulMusicTest();
 		try {
 			mt.play();
 		} catch (MidiUnavailableException e) {
