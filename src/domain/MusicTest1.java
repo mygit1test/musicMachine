@@ -4,18 +4,13 @@ import javax.sound.midi.*;
 
 public class MusicTest1 {
 
-	public void play() throws MidiUnavailableException {
-	 Sequencer sequencer = MidiSystem.getSequencer(); 
-	 System.out.println("We got a sequencer"); 
-	 }
-
 	public static void main(String[] args) {
-		MusicTest1 mt = new MusicTest1();
-		try {
-			mt.play();
-		} catch (MidiUnavailableException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		MiniMiniMusicApp mt = new MiniMiniMusicApp();
+		mt.play();
+
+		System.out.println("What you write in a catch block depends on the exception that was thrown. "
+				+ "For example, if a server is down, you might use the catch block to try another server. "
+				+ "If the file isn’t there, you might ask the user for help finding it.");
+
 	}
 }
